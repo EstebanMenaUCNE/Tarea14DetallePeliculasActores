@@ -91,7 +91,7 @@ namespace ProyectoPeliculas.UI.Registros
                 
                 if (pelicula != null)
                 {
-                    //estrenoDateTimePicker.Value = pelicula.Estreno;
+                    estrenoDateTimePicker.Value = pelicula.Estreno;
                     descripcionTextBox.Text = pelicula.Descripcion;
                     categoriaIdComboBox.Text = pelicula.CategoriaId.ToString();
                 }
