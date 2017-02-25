@@ -11,7 +11,7 @@ namespace ProyectoPeliculas.Entidades
         [Key]
         public int ActorId { get; set; }
         public string Nombres { get; set; }
-        public List<Pelicula> Peliculas { get; set; }
+        public virtual List<Pelicula> Peliculas { get; set; }
 
         public Actor()
         {

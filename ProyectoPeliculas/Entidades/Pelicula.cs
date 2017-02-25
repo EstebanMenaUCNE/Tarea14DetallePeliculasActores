@@ -14,7 +14,7 @@ namespace ProyectoPeliculas.Entidades
         public string Descripcion { get; set; }
         public int CategoriaId { get; set; }
         //public List<Categoria> Categorias { get; set; }
-        public List<Actor> Actores { get; set; }
+        public virtual List<Actor> Actores { get; set; }
 
         public Pelicula()
         {

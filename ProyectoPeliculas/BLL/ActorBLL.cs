@@ -27,7 +27,7 @@ namespace ProyectoPeliculas.BLL
                     db.SaveChanges();
                     return true;
                 }
-                catch (Exception)
+                catch (Exception E)
                 {
                     return false;
                     throw;
