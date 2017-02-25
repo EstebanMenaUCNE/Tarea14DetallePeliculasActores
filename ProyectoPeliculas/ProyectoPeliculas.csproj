@@ -68,10 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ActorBLL.cs" />
     <Compile Include="BLL\CategoriaBLL.cs" />
     <Compile Include="BLL\PeliculaBLL.cs" />
     <Compile Include="BLL\UsuarioBLL.cs" />
     <Compile Include="DAL\PeliculasDb.cs" />
+    <Compile Include="Entidades\Actor.cs" />
     <Compile Include="Entidades\Categoria.cs" />
     <Compile Include="Entidades\Pelicula.cs" />
     <Compile Include="Entidades\Usuario.cs" />
@@ -88,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\FrmConsultaActores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\FrmConsultaActores.Designer.cs">
+      <DependentUpon>FrmConsultaActores.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Consultas\FrmConsultaCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +113,12 @@
     </Compile>
     <Compile Include="UI\Consultas\FrmConsultaUsuarios.Designer.cs">
       <DependentUpon>FrmConsultaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\FrmRegistroActores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\FrmRegistroActores.Designer.cs">
+      <DependentUpon>FrmRegistroActores.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\FrmRegistroCategorias.cs">
       <SubType>Form</SubType>
@@ -124,6 +138,7 @@
     <Compile Include="UI\Registros\FrmRegistroUsuarios.Designer.cs">
       <DependentUpon>FrmRegistroUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades.cs" />
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +151,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\FrmConsultaActores.resx">
+      <DependentUpon>FrmConsultaActores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Consultas\FrmConsultaCategorias.resx">
       <DependentUpon>FrmConsultaCategorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Consultas\FrmConsultaUsuarios.resx">
       <DependentUpon>FrmConsultaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\FrmRegistroActores.resx">
+      <DependentUpon>FrmRegistroActores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\FrmRegistroCategorias.resx">
       <DependentUpon>FrmRegistroCategorias.cs</DependentUpon>

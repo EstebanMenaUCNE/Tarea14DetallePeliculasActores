@@ -40,6 +40,8 @@
             this.categoríasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.películasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.PrincipalMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +76,8 @@
             this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosToolStripMenuItem,
             this.categoríasToolStripMenuItem,
-            this.películasToolStripMenuItem});
+            this.películasToolStripMenuItem,
+            this.actoresToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
@@ -105,7 +108,8 @@
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosToolStripMenuItem1,
             this.categoríasToolStripMenuItem1,
-            this.películasToolStripMenuItem1});
+            this.películasToolStripMenuItem1,
+            this.actoresToolStripMenuItem1});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
@@ -137,6 +141,20 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
+            // actoresToolStripMenuItem
+            // 
+            this.actoresToolStripMenuItem.Name = "actoresToolStripMenuItem";
+            this.actoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.actoresToolStripMenuItem.Text = "Actores";
+            this.actoresToolStripMenuItem.Click += new System.EventHandler(this.actoresToolStripMenuItem_Click);
+            // 
+            // actoresToolStripMenuItem1
+            // 
+            this.actoresToolStripMenuItem1.Name = "actoresToolStripMenuItem1";
+            this.actoresToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.actoresToolStripMenuItem1.Text = "Actores";
+            this.actoresToolStripMenuItem1.Click += new System.EventHandler(this.actoresToolStripMenuItem1_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,5 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem categoríasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem películasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actoresToolStripMenuItem1;
     }
 }

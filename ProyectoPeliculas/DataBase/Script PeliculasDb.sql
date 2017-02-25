@@ -15,3 +15,13 @@ Estreno date,
 Descripcion varchar(50),
 CategoriaId int
 );
+
+create table Actores(
+ActorId int identity(1,1) primary key,
+Nombres varchar(80)
+);
+
+create table PeliculasActores(
+PeliculaId int,
+ActorId int
+);

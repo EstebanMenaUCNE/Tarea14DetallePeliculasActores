@@ -47,5 +47,15 @@ namespace ProyectoPeliculas
         {
             new FrmRegistroPeliculas().Show();
         }
+
+        private void actoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmRegistroActores().Show();
+        }
+
+        private void actoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FrmConsultaActores().Show();
+        }
     }
 }

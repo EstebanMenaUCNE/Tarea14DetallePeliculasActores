@@ -16,7 +16,18 @@ namespace ProyectoPeliculas.BLL
             {
                 try
                 {
-                    db.Peliculas.Add(pelicula);
+                    if (Buscar(pelicula.PeliculaId) == null)
+                    {
+                        db.Peliculas.Add(pelicula);
+                        /*foreach (var cat in pelicula.Categorias)
+                        {
+                            db.Entry(cat).State = EntityState.Unchanged;
+                        }*/
+                    }
+                    else
+                    {
+                        db.Entry(pelicula).State = EntityState.Modified;
+                    }
                     db.SaveChanges();
                     return true;
                 }

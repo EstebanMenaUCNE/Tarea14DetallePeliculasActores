@@ -13,10 +13,13 @@ namespace ProyectoPeliculas.Entidades
         public DateTime Estreno { get; set; }
         public string Descripcion { get; set; }
         public int CategoriaId { get; set; }
+        //public List<Categoria> Categorias { get; set; }
+        public List<Actor> Actores { get; set; }
 
         public Pelicula()
         {
-
+            //Categorias = new List<Categoria>();
+            Actores = new List<Actor>();
         }
 
         public Pelicula(DateTime estreno, string descripcion, int categoriaId)
@@ -24,6 +27,8 @@ namespace ProyectoPeliculas.Entidades
             Estreno = estreno;
             Descripcion = descripcion;
             CategoriaId = categoriaId;
+            //Categorias = new List<Categoria>();
+            Actores = new List<Actor>();
         }
     }
 }

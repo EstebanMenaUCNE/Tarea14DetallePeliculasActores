@@ -19,16 +19,13 @@ namespace ProyectoPeliculas.BLL
                     if (Buscar(categoria.CategoriaId) == null)
                     {
                         db.Categorias.Add(categoria);
-                        db.SaveChanges();
-                        return true;
                     }
                     else
                     {
                         db.Entry(categoria).State = EntityState.Modified;
-                        db.SaveChanges();
-                        return true;
                     }
-                    
+                    db.SaveChanges();
+                    return true;
                 }
                 catch (Exception)
                 {
@@ -38,24 +35,6 @@ namespace ProyectoPeliculas.BLL
                 
             }
         }
-
-        /*public static bool Modificar(Categoria categoria)
-        {
-            using (var db = new PeliculasDb())
-            {
-                try
-                {
-                    db.Entry(categoria).State = EntityState.Modified;
-                    db.SaveChanges();
-                    return true;
-                }
-                catch (Exception)
-                {
-                    return false;
-                    throw;
-                }
-            }
-        }*/
 
         public static bool Eliminar(int id)
         {

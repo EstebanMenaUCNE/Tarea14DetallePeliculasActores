@@ -16,7 +16,14 @@ namespace ProyectoPeliculas.BLL
             {
                 try
                 {
-                    db.Usuarios.Add(usuario);
+                    if (Buscar(usuario.UsuarioId) == null)
+                    {
+                        db.Usuarios.Add(usuario);
+                    }
+                    else
+                    {
+                        db.Entry(usuario).State = EntityState.Modified;
+                    }
                     db.SaveChanges();
                     return true;
                 }
